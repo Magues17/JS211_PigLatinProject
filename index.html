@@ -2,19 +2,63 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>PIG LATIN TRANSLATOR</title>
     <script src="website.js"></script>
+    <link rel="stylesheet" href="pigLatin.css">
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+      }
+      
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 200px;
+      }
+      
+      h1 {
+        margin-top: 0;
+        margin-bottom: 20px;
+      }
+      
+      #user-input {
+        direction: rtl; 
+        text-indent: 10px;
+        width: 25%;
+        height: 50px;
+        font-size: 25px;
+        vertical-align: text-top;
+        text-align: left;
+        margin-bottom: 20px;
+        margin-right: 20px;
+      }
+      
+   
+
+      #results {
+        margin-top: 20px;
+        font-size: 24px;
+        text-align: left;
+      }
+
+      button {
+  font-size: 25px;
+  padding: 10px;
+  margin-top: 20px;
+}
+    </style>
   </head>
   <body>
-    <h1>Hello World!</h1>
-    <hr/>
+    <h1>PIG LATIN TRANSLATOR!</h1>
     <div id="display-element"></div>
     
       <input id="user-input" type="text">
       <!-- How do you get this input sent to the pigLatin() function? -->
       <button onclick="getWord()">Translate</button>
  
-    <hr/>
     <div id="results"></div>
   </body>
 </html>
